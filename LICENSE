@@ -1,19 +1,20 @@
-Copyright (c) 2026 miftahganzz
+MIT License
 
-All rights reserved.
+Copyright (c) 2026 Miftah Ganz
 
-This software is provided for personal use only.
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, subject to the additional terms below.
 
-You are NOT allowed to:
-- Modify the software
-- Reverse engineer the software
-- Redistribute the software
-- Sell or sublicense the software
-- Use the software for commercial purposes
+Additional restrictions:
+- Personal, non-commercial use only.
+- You may not modify, reverse engineer, redistribute, sell, sublicense, or use
+  the Software for commercial purposes.
 
-You are allowed to:
-- Download and use the software for personal, non-commercial use only.
-
-Any violation of these terms may result in legal action.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND.
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
