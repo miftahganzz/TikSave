@@ -1,5 +1,6 @@
 import Foundation
 import ArgumentParser
+import Dispatch
 
 struct TikSave: AsyncParsableCommand {
     static let configuration = CommandConfiguration(
@@ -32,7 +33,7 @@ extension TikSave {
         @Flag(name: .shortAndLong, help: "Verbose output")
         var verbose: Bool = false
         
-        func run() async throws {
+        mutating func run() async throws {
             let downloader = TikTokDownloader(verbose: verbose)
             
             print("🎬 TikSave CLI v1.0.0")
@@ -73,7 +74,7 @@ extension TikSave {
         @Flag(name: .shortAndLong, help: "Verbose output")
         var verbose: Bool = false
         
-        func run() async throws {
+        mutating func run() async throws {
             let downloader = TikTokDownloader(verbose: verbose)
             
             print("🎬 TikSave CLI v1.0.0")
@@ -101,4 +102,10 @@ enum DownloadFormat: String, ExpressibleByArgument {
     case images
 }
 
-TikSave.main()
+// Bridge from sync process entrypoint (main.swift) to async ArgumentParser entrypoint.
+let semaphore = DispatchSemaphore(value: 0)
+Task {
+    await TikSave.main()
+    semaphore.signal()
+}
+semaphore.wait()
