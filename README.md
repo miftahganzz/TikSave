@@ -3,7 +3,7 @@
 <div align="center">
 
 ![Platform](https://img.shields.io/badge/platform-macOS-blue?style=for-the-badge&logo=apple)
-![Version](https://img.shields.io/badge/version-1.0.0-green?style=for-the-badge)
+![Version](https://img.shields.io/badge/version-1.0.6-green?style=for-the-badge)
 ![License](https://img.shields.io/badge/license-Proprietary-red?style=for-the-badge)
 ![Downloads](https://img.shields.io/github/downloads/miftahganzz/TikSave/total?style=for-the-badge&color=purple)
 
@@ -248,12 +248,25 @@ This is normal for apps outside the App Store. To fix:
 **TikSave** is distributed as a compiled binary with **Proprietary License**.
 
 ```
-Copyright © 2026 Miftah Ganzz. All rights reserved.
+Copyright (c) 2026 miftahganzz
 
-This software is provided as a compiled binary for personal use only.
-Redistribution, modification, or reverse engineering is prohibited.
+All rights reserved.
 
-For licensing inquiries, please contact the author.
+This software is provided for personal use only.
+
+You are NOT allowed to:
+- Modify the software
+- Reverse engineer the software
+- Redistribute the software
+- Sell or sublicense the software
+- Use the software for commercial purposes
+
+You are allowed to:
+- Download and use the software for personal, non-commercial use only.
+
+Any violation of these terms may result in legal action.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND.
 ```
 
 ---
