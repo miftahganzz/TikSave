@@ -2,68 +2,73 @@
 
 <div align="center">
 
-![Platform](https://img.shields.io/badge/platform-macOS-blue?style=for-the-badge&logo=apple)
-![Version](https://img.shields.io/badge/version-1.0.6-green?style=for-the-badge)
-![License](https://img.shields.io/badge/license-Proprietary-red?style=for-the-badge)
-![Downloads](https://img.shields.io/github/downloads/miftahganzz/TikSave/total?style=for-the-badge&color=purple)
+![Platform](https://img.shields.io/badge/platform-macOS%20%7C%20Windows%20%7C%20Android-blue?style=for-the-badge)
+![Version](https://img.shields.io/badge/version-1.1.12-green?style=for-the-badge)
+![License](https://img.shields.io/badge/license-Open%20Source-green?style=for-the-badge)
+![Size](https://img.shields.io/badge/size-<30%20MB-purple?style=for-the-badge)
 
-**The Ultimate TikTok Video Downloader for macOS**
+**Save TikToks. Watermark-free. Natively.**
 
-Fast • Simple • Watermark-Free • Native macOS App
+Download high-quality videos, photo slideshows, and audio tracks directly to your macOS, Windows, or Android device. Fast, private, and completely free of ads.
 
-[⬇️ Download Latest Release](https://github.com/miftahganzz/TikSave/releases/latest/download/TikSave.dmg) • [📖 Documentation](#how-to-use) • [⭐ Star this repo](https://github.com/miftahganzz/TikSave)
+[⬇️ Get macOS App](#download) • [🤖 Get Android App](#download) • [💻 Get Windows App](#download) • [📖 View Source Code](https://github.com/miftahganzz/TikSave)
 
 ---
 </div>
 
+## 🚀 Why TikSave?
+
+### **Built for macOS, Windows & Android, not for ads.**
+
+Most TikTok downloaders are web pages cluttered with sketchy redirects, cookie banners, and video ads. TikSave is different.
+
+We build dedicated native applications for macOS, Windows, and Android. Whether running as a menu bar helper on your Mac, a lightweight desktop app on Windows, or a mobile client on your Android device, TikSave processes downloads directly between your system and TikTok's CDN network. That means faster downloads, offline library management, zero tracking, and no intrusive web redirects.
+
+---
 
 ## ✨ Features
 
 <div align="center">
+
+### **Built for creators.**
+*Simple layouts doing one thing: getting the job done.*
+
+</div>
+
 <table>
 <tr>
 <td width="50%">
 
-### 🚀 **Core Features**
-- ⚡️ Lightning fast downloads
-- 💧 100% watermark-free
-- 🎵 Audio extraction
-- 👤 Profile downloads
-- 📱 Native macOS app
+#### 🎥 **HD Video & Audio**
+Grab high-definition video streams without watermarks, or convert and download audio-only clips directly into 320kbps MP3 tracks.
+
+#### 🖼️ **Slideshows & Photos**
+Batch download photo slides from image posts. Features an interactive Selector Modal to grab specific images or download the entire stack.
+
+#### 👤 **Creator Profile Insights**
+Search creator profiles directly inside the app. Inspect accounts, check posting stats, and download public stories without logging in.
+
+#### 📚 **Library & Offline Media Player**
+Browse and search downloaded files in your local library. Play videos, listen to audio with album arts, and view slides without opening Finder or your device's file manager.
 
 </td>
 <td width="50%">
 
-### 🎯 **Advanced Features**
-- 🔄 Batch downloads queue
-- 📋 Smart URL detection
-- 🎨 Beautiful Swift UI
-- 🌐 No account required
-- ⚙️ Custom quality settings
+#### 📂 **Collection & History Manager**
+Group files into custom folders (e.g. "Reference Content"). A local history tracker archives past URLs, file sizes, and date added.
+
+#### 📋 **Smart Clipboard**
+Scan clipboard links automatically when you focus the window. Enable Auto-Download to start saving files as soon as you copy a link.
+
+#### 🔔 **Customization & Alerts**
+Rename files dynamically using properties like `{username}_{video_id}`. Sort files by media type automatically and trigger desktop alerts with the custom TikSave Chime sound when downloads finish.
+
+#### 🔄 **Automatic Updates**
+TikTok changes fast. TikSave keeps up — silently, in the background. Native updates for macOS, WinSparkle for Windows, and smart hot updates for Android.
 
 </td>
 </tr>
 </table>
-</div>
-
----
-
-## 📦 Quick Installation
-
-### Method 1: Direct Download (Recommended)
-```bash
-# Download the latest DMG
-curl -LO https://github.com/miftahganzz/TikSave/releases/latest/download/TikSave.dmg
-
-# Mount and install
-open TikSave.dmg
-# Then drag to Applications folder
-```
-
-### Method 2: Manual Download
-1. Go to [Releases Page](https://github.com/miftahganzz/TikSave/releases)
-2. Download `TikSave.dmg`
-3. Install by dragging to Applications
 
 ---
 
@@ -97,26 +102,63 @@ graph LR
 
 ---
 
-## 🎨 Advanced Features
+## 🛠️ Architecture
 
 <div align="center">
 
-### **Profile Download Mode**
-| Feature | Description |
-|---------|-------------|
-| 👤 Profile Picture | Download HD profile images |
-| 📊 User Info | Export profile statistics |
-| 🎥 All Videos | Batch download user's public videos |
-| 📝 Bio & Links | Save profile description |
-
-### **Audio Extraction**
-```bash
-🎵 MP3 Format - High quality audio only
-🎧 M4A Format - Compatible with Apple devices
-🎼 Original - Keep original audio quality
-```
+### **Natively Optimized**
+*Light on battery, heavy on speed. Compiled natively for macOS, Windows & Android.*
 
 </div>
+
+| Technology | Description |
+|------------|-------------|
+| **Swift & SwiftUI** | Powers the macOS app. Compiled to a native binary for instant launch, menu bar support, and integration with the macOS system. |
+| **Flutter & Dart** | Powers both the Windows and Android apps. Delivers native desktop and mobile performance, clean Fluent/Material rendering, and high-efficiency background downloading. |
+| **Combine & Dart Streams** | Asynchronous reactive pipelines that handle downloading, media parsing, and background networking seamlessly. |
+| **AVKit, ExoPlayer & MediaKit** | Core media engines. Provide high-fidelity in-app video playback, audio streams, and local library organization across macOS, Windows, and Android. |
+| **Native Notifications** | Integrates with macOS UserNotifications, Windows Toast Notifications, and Android Notification Channels to alert you with progress trackers. |
+| **TikSave Server** | A unified parser interface. Safely streams video parameters, HD streams, photo sliders, and creator assets directly from the CDN. |
+
+---
+
+## 🔄 Automatic Updates
+
+<div align="center">
+
+### **Always up to date. Automatically.**
+
+</div>
+
+| Platform | Update Mechanism |
+|----------|------------------|
+| 🍏 **macOS** | **Native macOS Updates.** When a new release is available, TikSave prompts you with a native macOS dialog. Review changes and install with a single click. |
+| 💻 **Windows** | **Native Windows Updates.** Integrates the WinSparkle framework. It runs seamlessly in the background and alerts you with a clean update dialog when a new version is ready. |
+| 🤖 **Android** | **Background Smart Updates.** Receives hot updates silently in the background. Fixes apply instantly the next time you open the app — no reinstall needed. |
+
+---
+
+## 📦 Download
+
+Get the latest version of TikSave for your platform.
+
+| Platform | Download Link |
+|----------|---------------|
+| 🍏 **macOS** | [Download TikSave for macOS (v1.1.12)](https://github.com/miftahganzz/TikSave/releases/latest/download/TikSave.dmg) |
+| 🤖 **Android** | [Download TikSave for Android (.apk)](https://github.com/miftahganzz/TikSave/releases/latest/download/TikSave.apk) |
+| 💻 **Windows** | [Download TikSave for Windows (.exe)](https://github.com/miftahganzz/TikSave/releases/latest/download/TikSave.exe) |
+| 💻 **Source Code** | [View Source Code on GitHub](https://github.com/miftahganzz/TikSave) |
+
+---
+
+## 💻 System Requirements
+
+| Requirement | Specification |
+|-------------|---------------|
+| **macOS Version** | macOS 13.0 (Ventura) or newer |
+| **Android Version** | Android 13.0 (Tiramisu) or newer |
+| **Windows Version** | Windows 10 / 11 or newer |
+| **File Storage Size** | Lightweight (under 30 MB) |
 
 ---
 
@@ -136,137 +178,30 @@ graph LR
 
 ## 🔒 Privacy First
 
-### 🛡️ **Your Data Stays Yours**
+### **100% Open-Source & Tracker-Free**
 
 ```
 ╔════════════════════════════════════╗
 ║         PRIVACY PROMISE            ║
 ╠════════════════════════════════════╣
-║ ✅ No data collection              ║
-║ ✅ No analytics or tracking        ║
-║ ✅ No third-party services         ║
-║ ✅ All processing on your device   ║
+║ ✅ 100% open-source tool           ║
+║ ✅ Zero spyware or analytics       ║
+║ ✅ No advertising scripts          ║
+║ ✅ No intrusive web redirects      ║
 ║ ✅ No account required             ║
 ╚════════════════════════════════════╝
-```
-
-### 🔐 **Security Features**
-- End-to-end encrypted connections
-- No login credentials stored
-- Automatic clipboard clearing option
-- Sandboxed application environment
-
----
-
-## 💻 System Requirements
-
-| Requirement | Minimum | Recommended |
-|------------|---------|-------------|
-| **macOS** | 11.0 (Big Sur) | 13.0 (Ventura) |
-| **RAM** | 256 MB | 512 MB |
-| **Storage** | 50 MB | 100 MB |
-| **Processor** | Intel/Apple Silicon | Apple Silicon |
-
----
-
-## ❓ Frequently Asked Questions
-
-<details>
-<summary><strong>🤔 Is TikSave really free?</strong></summary>
-<br>
-✅ Yes! TikSave is completely free with no hidden costs, subscriptions, or in-app purchases. No credit card required, ever!
-</details>
-
-<details>
-<summary><strong>🔒 Why is the license proprietary?</strong></summary>
-<br>
-The app is distributed as a compiled binary to protect the intellectual property and ensure the best user experience. The license file indicates it's proprietary software, meaning the source code is not publicly available.
-</details>
-
-<details>
-<summary><strong>⚡ Why is it faster than other downloaders?</strong></summary>
-<br>
-TikSave uses optimized Swift code and efficient download algorithms specifically tuned for TikTok's infrastructure. Native macOS integration also reduces overhead.
-</details>
-
-<details>
-<summary><strong>📱 Can I download private videos?</strong></summary>
-<br>
-No, TikSave respects privacy settings and can only download publicly available content, just like a web browser would see them.
-</details>
-
-<details>
-<summary><strong>🔄 Will this work with future TikTok updates?</strong></summary>
-<br>
-We actively maintain TikSave to ensure compatibility with TikTok updates. Check the releases page for the latest version.
-</details>
-
-<details>
-<summary><strong>⚠️ macOS says "App is damaged" or won't open?</strong></summary>
-<br>
-This is normal for apps outside the App Store. To fix:
-1. Right-click the app → Select **Open**
-2. Click **Open** in the dialog
-3. That's it! The app will now work normally
-</details>
-
----
-
-## 🚀 Performance Tips
-
-### For Best Results:
-- 📶 Use stable WiFi connection
-- 🔄 Update to latest TikSave version
-- 💾 Save to local drive (not cloud storage)
-- ⚡ Close unused apps while batch downloading
-
-### Batch Download Limits:
-- 🎥 Max 50 videos per session
-- 📦 2GB total size recommended
-- ⏱️ 10 minutes maximum queue time
-
----
-
-## 📝 Version History
-
-### **v1.0.0** (March 2026)
-```
-✨ Initial Release Features:
-├── 🎯 Core download functionality
-├── 💧 Watermark removal
-├── 🎵 Audio extraction
-├── 👤 Profile downloads
-├── 🎨 Native macOS interface
-├── 📋 Clipboard auto-detection
-└── ⚡ Lightning fast performance
 ```
 
 ---
 
 ## 📜 License Information
 
-**TikSave** is distributed as a compiled binary with **Proprietary License**.
+**TikSave** is Free and Open Source software.
 
 ```
 Copyright (c) 2026 miftahganzz
 
-All rights reserved.
-
-This software is provided for personal use only.
-
-You are NOT allowed to:
-- Modify the software
-- Reverse engineer the software
-- Redistribute the software
-- Sell or sublicense the software
-- Use the software for commercial purposes
-
-You are allowed to:
-- Download and use the software for personal, non-commercial use only.
-
-Any violation of these terms may result in legal action.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND.
+Free and Open Source • Safe & Secure • No Adware
 ```
 
 ---
@@ -280,22 +215,6 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND.
 [![Repository](https://img.shields.io/badge/Repo-TikSave-green?style=for-the-badge&logo=github)](https://github.com/miftahganzz/TikSave)
 
 </div>
-
----
-
-## 🤝 Support & Community
-
-### Ways to Support:
-- ⭐ **Star** this repository
-- 📢 **Share** with friends
-- 🐛 **Report** bugs
-- 💡 **Suggest** features
-- 💬 **Join** discussions
-
-### Contact:
-- **Issues**: [GitHub Issues](https://github.com/miftahganzz/TikSave/issues)
-- **Discussions**: [GitHub Discussions](https://github.com/miftahganzz/TikSave/discussions)
-- **Email**: [Contact Form](https://github.com/miftahganzz)
 
 ---
 
@@ -337,7 +256,7 @@ Download only content you have permission to use.
 
 <div align="center">
 
-### **Made with ❤️ for the macOS community**
+### **Free and Open Source • Safe & Secure • No Adware • macOS + Android + Windows**
 
 [⬆ Back to Top](#-tiksave)
 
